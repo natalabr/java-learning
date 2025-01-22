@@ -39,4 +39,8 @@ public class User {
     public void setMembership(Membership membership) {
         _membership = membership.toString();
     }
+
+    public String toString() {
+        return String.format("%s - %s", getName(), getMembership());
+    }
 }
