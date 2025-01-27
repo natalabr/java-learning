@@ -1,6 +1,9 @@
 import java.lang.reflect.Member;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.Period;
 
-public class User {
+public abstract class User implements IUser{
 
     private String _name;
     private String _membership;
@@ -40,7 +43,13 @@ public class User {
         _membership = membership.toString();
     }
 
+    /*
     public String toString() {
-        return String.format("%s - %s", getName(), getMembership());
+        return String.format("%s - %s, %s years old", getName(), getMembership(), age);
+    }*/
+
+    public void setAge(LocalDate dateOfBirth) {
+        Period period = Period.between(dateOfBirth, LocalDate.now());
+        age = period.getYears();
     }
 }
