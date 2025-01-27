@@ -1,3 +1,5 @@
+package Package01;
+
 public class Customer extends User implements IUser{
 
     public Customer(String name, String membership) {
@@ -9,6 +11,6 @@ public class Customer extends User implements IUser{
     }
 
     public String hello() {
-        return String.format("Customer: %s - %s", getName(), getMembership());
+        return String.format("Package01.Customer: %s - %s", getName(), getMembership());
     }
 }

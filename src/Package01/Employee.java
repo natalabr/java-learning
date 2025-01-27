@@ -1,3 +1,5 @@
+package Package01;
+
 public class Employee extends User implements IUser {
 
     public Employee(String name, String membership) {
@@ -9,6 +11,6 @@ public class Employee extends User implements IUser {
     }
 
     public String hello() {
-        return String.format("Employee: %s - %s, %s years old", getName(), getMembership(), age);
+        return String.format("Package01.Employee: %s - %s, %s years old", getName(), getMembership(), age);
     }
 }

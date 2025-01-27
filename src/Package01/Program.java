@@ -1,3 +1,5 @@
+package Package01;
+
 import java.time.LocalDate;
 
 public class Program {
@@ -12,7 +14,7 @@ public class Program {
 
         IUser u2 = new Customer("Sally", Membership.SILVER);
         //u2.setName("Sally");
-        //u2.setMembership(Membership.SILVER);
+        //u2.setMembership(Package01.Membership.SILVER);
 
         IUser u3 = new God();
 
@@ -26,7 +28,7 @@ public class Program {
         userController.showUsers();
     }
 
-   /* public static void printUser(User user) {
+   /* public static void printUser(Package01.User user) {
         System.out.println(String.format("%s - %s", user.getName(), user.getMembership()));
     }*/
 }
